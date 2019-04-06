@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="location">
+        <h1 class="location-timezone">Warsaw</h1>
+        <!-- <p class="location-description">Icon clound</p> -->
+        <canvas class="icon" width="64" height="64"></canvas>
+
+      </div>
+      <div class="temperature">
+          <div class="degree-change">
+                <h2 class="temperature-degree">30</h2>
+                <span>&deg;</span><span id="degree">C</span>
+                
+          </div>
+          <div class="apparent-temp-container">
+            <h3 class="apparent-temperature"></h3><span>&deg; C</span>
+          </div>
+          
+        <p class="temperature-description">Lorem, ipsum dolor.</p>
+        <p class="humidity"></p>
+        <p class="pressure"></p>
+        <p class="wind-speed"></p>
+      </div>
+    </div>
+    <footer>
+      <a href="https://darksky.net/poweredby/" target="_blank" class="powered-by">Powered by Dark Sky</a>
+      <p class="copyright">&copy; Jarosław Terejko <span></span></p>
+    </footer>
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
